@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="signUp">
+        <p class="pls">Please Sign Up</p>
+        <div class="form">
+            <form name="form">
+                <div class="form_con">
+                <input type="text" name="name" placeholder="First name">
+                <input type="text" name="surname" placeholder="Surname">
+                <input type="email" name="email" class="email" placeholder="Email">
+                <div class="existEmail hide">This email alrady exist</div>
+                <input type="password" name="password" placeholder="Password">
+                <input type="button" name="signUp" value="Sign up" class="press">
+            </div>
+            <button class="now">Sign in now</button>
+            </form>
+        </div>
+    </div>
+    <div class="signIn hide">
+        <p class="pls">Please Sign In</p>
+        <form name="signInFrom">
+            <div class="sign_cont">
+                <input type="email" name="email2" class="approve" placeholder="Email address">
+                <input type="password" name="pass2" class="approve" placeholder="Password">
+                <div class="incorrect hide">Incorrect email or password</div>
+                <div class="empty hide">Detected empty field</div>
+                <div class="notFound hide">LocalStorage did not found this user</div>
+                <input type="button" name="signIn" value="Sign In" class="sgn">
+            </div>
+            <button class="up">Sign up now</button>
+            <input type="checkbox" name="chk" class="checkMe" id="chk">
+            <label class="stl" for="chk"></label>
+        </form>
+      
+    </div>
+    <div class="profile hide">
+        <div class="avatar"></div>
+        <div class="profileName"></div>
+        <div class="profileEmail"></div>
+        <div class="profileStatus">Designer & Web Developing</div>
+        <div class="bord"></div>
+        <div class="wrap">
+            <button class="prevPage">Sign Up</button>
+        </div> 
+        
+    </div>
+   <button class="clearLocal">Clear LocalStorage</button>
+    <script src="main.js"></script>
+    <script src="testApp.js"></script>
+</body>
+</html>
